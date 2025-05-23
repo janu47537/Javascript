@@ -1,0 +1,218 @@
+<html>
+    <head>
+        <style>
+            /* Color animations */
+            @keyframes colorChange1 {
+                0% { background-color: #ff6666; }
+                50% { background-color: #ffcc66; }
+                100% { background-color: #ff6666; }
+            }
+            @keyframes colorChange2 {
+                0% { background-color: #66ff66; }
+                50% { background-color: #66ccff; }
+                100% { background-color: #66ff66; }
+            }
+            @keyframes colorChange3 {
+                0% { background-color: #6666ff; }
+                50% { background-color: #cc66ff; }
+                100% { background-color: #6666ff; }
+            }
+            @keyframes colorChange4 {
+                0% { background-color: #ff66cc; }
+                50% { background-color: #ff6699; }
+                100% { background-color: #ff66cc; }
+            }
+            @keyframes colorChange5 {
+                0% { background-color: #66ffff; }
+                50% { background-color: #6699ff; }
+                100% { background-color: #66ffff; }
+            }
+            @keyframes colorChange6 {
+                0% { background-color: #ffff66; }
+                50% { background-color: #ff9966; }
+                100% { background-color: #ffff66; }
+            }
+            @keyframes colorChange7 {
+                0% { background-color: #ff9966; }
+                50% { background-color: #ff6666; }
+                100% { background-color: #ff9966; }
+            }
+
+            /* Button styles with animations */
+            button.color1 {
+                animation: colorChange1 3s infinite;
+                border: none;
+                padding: 10px 20px;
+                color: white;
+                font-weight: bold;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+            button.color2 {
+                animation: colorChange2 3s infinite;
+                border: none;
+                padding: 10px 20px;
+                color: white;
+                font-weight: bold;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+            button.color3 {
+                animation: colorChange3 3s infinite;
+                border: none;
+                padding: 10px 20px;
+                color: white;
+                font-weight: bold;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+            button.color4 {
+                animation: colorChange4 3s infinite;
+                border: none;
+                padding: 10px 20px;
+                color: white;
+                font-weight: bold;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+            button.color5 {
+                animation: colorChange5 3s infinite;
+                border: none;
+                padding: 10px 20px;
+                color: white;
+                font-weight: bold;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+            button.color6 {
+                animation: colorChange6 3s infinite;
+                border: none;
+                padding: 10px 20px;
+                color: white;
+                font-weight: bold;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+            button.color7 {
+                animation: colorChange7 3s infinite;
+                border: none;
+                padding: 10px 20px;
+                color: white;
+                font-weight: bold;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+
+            /* Text color styles */
+            h1.color1 {
+                color: #ff6666;
+                animation: colorChange1 3s infinite;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            h1.color2 {
+                color: #66ff66;
+                animation: colorChange2 3s infinite;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            h1.color3 {
+                color: #6666ff;
+                animation: colorChange3 3s infinite;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            h1.color4 {
+                color: #ff66cc;
+                animation: colorChange4 3s infinite;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            h1.color5 {
+                color: #66ffff;
+                animation: colorChange5 3s infinite;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            h1.color6 {
+                color: #ffff66;
+                animation: colorChange6 3s infinite;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            h1.color7 {
+                color: #ff9966;
+                animation: colorChange7 3s infinite;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        </style>
+        <script>
+            function m(){
+                document.getElementById('a').innerHTML="Lord Shiva";
+            }
+            function t(){
+                document.getElementById('a').innerHTML="Lord Hanuma";
+            }
+            function w(){
+                document.getElementById('a').innerHTML="Lord Krishna";
+            }
+            function th(){
+                document.getElementById('a').innerHTML="Lord Saibaba";
+            }
+            function f(){
+                document.getElementById('a').innerHTML="Lord Lakshmi";
+            }
+            function sat(){
+                document.getElementById('a').innerHTML="Lord Venkateshwara";
+            }
+            function sun(){
+                document.getElementById('a').innerHTML="Lord Suryadeva";
+            }
+        </script>
+    </head>
+    <body>
+        <style>
+            body, html {
+                height: 100%;
+                margin: 0;
+                background-color: #282c34;
+                color: white;
+                font-family: Arial, sans-serif;
+            }
+            .center-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                text-align: center;
+            }
+            .button-container {
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                flex-wrap: wrap;
+                margin-bottom: 20px;
+            }
+            header {
+                font-size: 2rem;
+                margin-bottom: 20px;
+                font-weight: bold;
+            }
+        </style>
+        <div class="center-container">
+            <header>Weekday Button Selector</header>
+            <div class="button-container">
+                <button class="color1" onclick="m()">Monday</button>
+                <button class="color2" onclick="t()">Tuesday</button>
+                <button class="color3" onclick="w()">Wednesday</button>
+                <button class="color4" onclick="th()">Thursday</button>
+                <button class="color5" onclick="f()">Friday</button>
+                <button class="color6" onclick="sat()">Saturday</button>
+                <button class="color7" onclick="sun()">Sunday</button>
+            </div>
+            <h1 id="a" class="color1"></h1>
+        </div>
+    </body>
+</html>
