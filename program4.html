@@ -1,0 +1,31 @@
+<html>
+    <head></head>
+    <body>
+        <h1>Hello Students</h1>
+        <button onclick="a()">Click me to see statement</button>
+        <button onclick="b()">Click me to print thismpage</button>
+        <h1 id="c">Mother Theresa Institute Of Technology</h1>
+        <button onclick="c()">Click me to modify the content in h1 tag</button>
+        <h1 id="d">Full Stack</h1>
+        <button onclick="d()">Click me to modify the content in h1 tag</button>
+        <script>
+            function a(){
+                alert("Hello");
+            }
+            function b(){
+                window.print();
+            }
+            function c(){
+                document.getElementById('c').innerHTML="JNTUA";
+                document.getElementById('c').style.fontSize="50px";
+                document.getElementById('c').style.color="blue";
+                document.getElementById('c').style.border="4px solid black";
+                 }
+            function d(){
+                document.getElementById('d').innerHTML="Web Development";
+                document.getElementById('d').style.display="none";
+            }     
+            
+        </script>
+    </body>
+</html>
