@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <script>
+            function a() {
+                var s = document.getElementById("a").value; // Get the character input
+                var l = s.charCodeAt(0); // Get ASCII value of the first character
+                document.getElementById("p").innerHTML = l; // Display ASCII code
+            }
+        </script>
+    </head>
+    <body>
+        Enter a character: <input type="text" id="a">
+        <h1 id="p"></h1>
+        <button onclick="a()">Click me</button>
+    </body>
+</html>
